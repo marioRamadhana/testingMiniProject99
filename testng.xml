@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Mario Testing guru99">
+    <listeners>
+        <listener class-name="main.utils.SuiteListener"></listener>
+    </listeners>
+    <test name="Mario Test Guru99">
+        <!--        For headless automation un comment -->
+        <parameter name="browserName" value="headlessChrome"></parameter>
+
+<!--                <parameter name="browserName" value="chrome"></parameter>-->
+        <classes>
+            <class name="test.java.Login.P_Login"></class>
+            <class name="test.java.Dashboard.NewCustomer"></class>
+        </classes>
+    </test>
+</suite>
